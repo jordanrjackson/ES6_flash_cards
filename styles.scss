@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Acme')
+
+@mixin flex {
+
+}
+
+//font-family: 'Acme', sans-serif;
+
+body {
+  font-family: ""
+}
+
+.add-card {
+  padding: 15px 30px;
+  background-color: #c0392b;
+  font-size: 16px
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: inset -2px -2px rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1em;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  position:relative;
+  font-size:16px;
+}
+
+.add-card {
+  padding: 15px 30px;
+  background-color: #6c5ce7;
+  font-size: 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    @include: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    position: relative;
+
+    close-menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1.5em;
+      color: white;
+      font-size: 25px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 50%;
+      background-color:lightgray;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        background-color: black;
+
+        .new-card-form {
+            @include: flex;
+            width: 100%;
+            height: 100%;
+
+            #front-card, #back-card {
+                width: 400px;
+                height: 250px;
+                overflow: scroll;
+                background-color: white;
+                padding: 1em;
+                font-size: 18px;
+        }
+      }
+    }
+
+}

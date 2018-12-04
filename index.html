@@ -1,0 +1,48 @@
+<head>
+  !Doctype html>
+  <html lang="en"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>ES6 Flash Cards</title>
+</head>
+<body>
+  <button class="add-card">Add card</button>
+  <div class="overlay">
+      <i class="fas fa-times close-menu"></i>
+      <!-- New Card Form -->
+      <form class="new-card-form">
+        <textarea id="front-card" placeholder="Enter your question...">
+          
+        </textarea>
+        <textarea id="back-card"></textarea>
+        <input> type="submit" id="submit-card-form"/>
+      </form>
+
+    </div>
+  <center><h1>ES6 Flash Cards</h1></center>
+  
+  <center><p>ES6 Flash Cards</p></center
+  
+  <center><div id="card_button" ><p id="card_text"></p></div></center>
+  
+  <center><p>
+      <input type="button" id="previous_card" value="Previous Card" onclick="cards_handle.card_move(-1);"/>
+      <span id="position_index">0/0</span>
+      <input type="button" id="next_card" value="Next Card" onclick="cards_handle.card_move(1);"/>
+  </p></center>
+
+    <div id="new_cards">
+  <center>
+      <p>Add a New Flash Card</p>
+      Question:<input type="text" id="new_question" name="question"/>
+      Answer:<input type="text" id="new_answer" name="answer"/>
+      <input value="Add Card" type="button" onclick="user_enter();"/>
+  </center>
+  </div>
+  
+  <script src="main.js"></script>
+    
+</body>
+</html>
